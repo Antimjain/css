@@ -1,0 +1,9 @@
+1. External CSS
+    <head>
+      <link rel="stylesheet" href="mystyle.css">
+    </head>
+2. Internal CSS
+    <head>
+    <style></style>
+    </head>
+Inline CSS

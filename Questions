@@ -1,0 +1,118 @@
+1. different element, same class how to apply css on particular element
+  p .center{
+    color:red
+  }
+  <p class="center">Hello</p>
+  <h1 class="center">Hello</h1>
+
+2. one element 2 class apply
+  <p class="center item">Hello</p>
+
+3. Universal selector - css apply to all the elements
+  *{
+    text-align: center;
+    color: blue
+  }
+
+4. Grouping Selector - if h, p element have same style we can group them
+  h1, h2, p {
+    text-align: center;
+    color: blue
+  }
+
+5. css depends on order how it is written
+<head>
+  <style>
+  h1 {
+    color: orange;
+  }
+  </style>
+  <link rel="stylesheet" type="text/css" href="mystyle.css"> (color:oink) 
+</head>
+output => pink will apply to h1
+
+or 
+
+<head>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <style>
+  h1 {
+    color: orange;
+  }
+  </style>
+</head>
+output => output => orange will apply to h1
+
+
+6. background image and text are there how do you handle 
+  . background-image will be on the specific element not on the body
+  . background-position: right-top, for text give margin-right: 200px
+
+7. border 
+  border: 2px solid red
+
+8. margin -  Negative values are allowed, px, %, auto(browser calculate), 
+inherit - specifies that the margin should be inherited from the parent element
+
+margin: auto; horizontal center
+
+9. 
+  h1 {
+    margin: 0 0 50px 0;
+  }
+
+  h2 {
+    margin: 20px 0 0 0;
+  }
+
+margin between h1 and h2 50 because of margin collapse
+
+
+
+10. padding - Negative values are allowed,
+padding always added in width
+when using  box-sizing: border-box; so width will not add padding value
+
+11. div {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+content width 320+20+10+0 => 350  
+
+
+12. text-decoration used in link when active and hover
+
+13 table responsive => overflow-x:auto
+
+14. hover effect on table(tr:hover {background-color: #f5f5f5;}) and even odd background (tr:nth-child(even))
+
+15 nav horizontal => float: left, display:inline (li element)
+
+16 if giving span display:block then also we cann't write anything inside it
+
+17 different between display: none and visibility: hidden (take space)
+
+18 width and max-width to the div element (max-width)
+
+19 default position - static
+
+20 why z index => prevent overlapping z-index: -1 image will come in background and then text will display
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

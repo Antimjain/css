@@ -1,0 +1,68 @@
+There are five different position values:
+
+static
+relative
+fixed
+absolute
+sticky
+
+
+Static positioned elements are not affected by the top, bottom, left, and right properties.
+An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+
+
+
+affected by the top, bottom, left, and right properties.
+An element with position: relative; is positioned relative to its normal position:
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+
+
+An element with position: fixed; is positioned relative to the viewport,
+which means it always stays in the same place even if the page is scrolled:
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+
+
+An element with position: absolute; is positioned relative to the nearest 
+positioned ancestor (instead of positioned relative to the viewport, like fixed):
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+
+
+scroll and sticky div will not affect
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
+
+
+The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
