@@ -148,4 +148,59 @@ p:first-child i {
 }
 
 
-noteeeeeeeeeeeeeee this universal selector has low specificity while ID selectors have high specificity.
+NOTE this universal selector has low specificity while ID selectors have high specificity.
+
+CSS gradients let you display smooth transitions between two or more specified colors.
+CSS defines two types of gradients:
+Linear Gradients (goes down/up/left/right/diagonally)
+Radial Gradients (defined by their center)
+
+
+With CSS you can add shadow to text and to elements.
+In these chapters you will learn about the following properties:
+text-shadow
+box-shadow
+
+
+text-overflow: eclipse (text with ...)
+text-overflow: clip
+
+for hover effect with text-overflow
+overflow: hidden; 
+overflow: visible
+
+
+The CSS word-wrap property allows long words to be able to be broken and wrap onto the next line. 
+word-wrap: break-word;
+
+word-break: keep-all; (it will not break the word)
+word-break: break-all; (it can break the word)
+
+writing-mode: vertical-rl;
+
+2D,3D transform rotate and so many
+CSS transitions allows you to change property values smoothly, over a given duration.(on hover increase width)
+
+animation (direction, delay, duration)
+
+
+Does margin-top or margin-bottom has effect on inline element? no bcz flow with content on the page
+Does padding-top or padding-bottom has effect on inline element? no
+
+Does padding-left or padding-right or margin-left or margin-right has effect on inline element? yes
+
+If you have a <p> element with font-size: 10rem, will the text be responsive when the user resizes / drags the browser window?
+The pseudo class :checked will select inputs with type radio or checkbox, but not <option> elements.
+In a HTML document, the pseudo class :root always refers to the <html> element.
+The translate() function can move the position of an element on the z-axis.
+Which one would you prefer among px, em % or pt and why?
+Does overflow: hidden create a new block formatting context?
+What is the use of only?
+Does the screen keyword apply to the device's physical screen or the browser's viewport?
+What are the different css filter you can use?
+What are the reasons to use preprocessor?
+How can you load css resources conditionally?
+
+
+If something doesn't work in a specific browser (IE8), you would u approach this problem?
+How do you test cross-browser compatibility of your site?

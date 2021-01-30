@@ -11,12 +11,19 @@ p.center {
   color: red;
   padding: 40px;
   height: 100px
+};
+/* it won't work because of inline element */
+.inline{
+  padding-top: 107px;
+  padding-bottom: 500px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 </style>
 </head>
 <body>
 
-<h1 class="center">This heading will not be affected</h1>
+<span class="inline">This heading will not be affected</span>
 <p class="center">This paragraph will be red and center-aligned.</p> 
 
 </body>
