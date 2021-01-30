@@ -69,7 +69,7 @@ margin between h1 and h2 50 because of margin collapse
 
 
 
-10. padding - Negative values are allowed,
+10. padding - Negative values not are allowed,
 padding always added in width
 when using  box-sizing: border-box; so width will not add padding value
 
@@ -148,13 +148,4 @@ p:first-child i {
 }
 
 
-
-
-
-
-
-
-
-
-
-
+noteeeeeeeeeeeeeee this universal selector has low specificity while ID selectors have high specificity.

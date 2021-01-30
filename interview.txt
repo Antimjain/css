@@ -1,0 +1,152 @@
+1.What are the advantages of CSS?
+  Bandwidth
+  Site-wide consistency
+  Page reformatting
+  Accessibility
+  Content separated from presentation
+
+
+2.What are the limitations of CSS?
+  Ascending by selectors is not possible
+  Limitations of vertical control
+  No expressions
+  No column declaration
+  Pseudo-class not controlled by dynamic behavior
+  Rules, styles, targeting specific text not possible
+
+
+What are the benefits of CSS sprites?
+If a web page has a large number of images that take a longer time to load because each image separately sends out an HTTP request. 
+The concept of CSS sprites is used to reduce the loading time for a web page because it combines the various small images into one image. 
+It reduces the number of HTTP requests and hence the loading time
+
+
+How to restore the default property value using CSS?
+initial
+
+
+What is tweening?
+It is the process of generating intermediate frames between two images.
+It gives the impression that the first image has smoothly evolved into the second one.
+It is an important method used in all types of animations.
+In CSS3, Transforms (matrix, translate, rotate, scale) module can be used to achieve tweening.
+
+
+What is the difference between CSS2 and CSS3?
+Combinators , modules
+
+
+What is the meaning of cascading? How do style sheets cascade?
+Elements –  The same CSS style can be applied to multiple elements to achieve the same style.
+Multiple Style One Element – Multiple styles can be applied to a particular HTML element to achieve a unique style.
+Same style, Multiple Pages – The same stylesheet can be applied to different HTML pages altogether to achieve a template styling very quickly.
+
+
+What are the different modules used in the current version of CSS?
+There are several modules in CSS. Below are a few of them:
+Selectors
+Box Model
+Backgrounds and Borders
+Text Effects
+2D/3D Transformations
+Animations
+Multiple Column Layout
+User Interface
+
+
+What are the different media types allowed by CSS?
+There are four types of @media properties (including screen):
+
+all – for all media type devices
+print – for printers
+speech – for screenreaders that “reads” the page out loud
+screen – for computer screens, tablets, smart-phones etc.
+
+
+. What is the use of box-shadow in CSS?
+The box-shadow CSS property adds shadow effects around an element’s frame. You can set multiple effects separated by commas. A box-shadow is described by X and Y offsets relative to the element, color, blur and spread radii. Below are a few implementations of box-shadow
+
+box-shadow: 10px 5px 5px red;
+
+box-shadow: 60px -16px teal;
+
+box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+
+box-shadow: inset 5em 1em gold;
+
+
+
+
+How does a browser determine what elements match a CSS selector?
+Browsers match selectors from rightmost (key selector) to left. Browsers filter out elements in the DOM according to the key selector and traverse up its parent elements to determine matches. The shorter the length of the selector chain, the faster the browser can determine if that element matches the selector.
+
+For example with this selector p span, browsers firstly find all the <span> elements and traverse up its parent all the way up to the root to find the <p> element. For a particular <span>, as soon as it finds a <p>, it knows that the <span> matches and can stop its matching.
+
+
+
+
+
+
+
+
+Explain the scenario you would use translate() instead of absolute positioning? 
+Translate is a value of CSS transform. Changing transform or opacity does not trigger browser reflow or repaint but does trigger compositions; whereas changing the absolute positioning triggers reflow. Transform causes the browser to create a GPU layer for the element but changing absolute positioning properties uses the CPU. Hence translate() is more efficient and will result in shorter paint times for smoother animations.
+
+When using translate(), the element still occupies its original space (sort of like position: relative), unlike in changing the absolute positioning.
+
+
+
+div, p - Selects all <div> elements and all <p> elements
+div p - Selects all <p> elements that are anywhere inside a <div> element
+div > p - Selects all <p> elements where the immediate parent is a <div> element
+div + p - Selects all <p> elements that are placed immediately after a <div> element
+div ~ p - Selects all <p> elements that are anywhere preceded by a <div> element
+
+
+Select every <a> element whose href attribute value begins with “https”:
+
+a[href^="https"]
+Select every <a> element whose href attribute value ends with “.pdf”:
+
+a[href$=".pdf"]
+Select every <a> element whose href attribute value contains the substring “css”:
+
+a[href*="css"]
+
+
+
+ Describe ‘ruleset’?
+Ruleset : Selectors can be attached to other selectors to be identified by ruleset.
+It has two parts:
+Selector, e.g. R and
+declaration {text-indent: 11pt}
+
+
+
+How can the gap under the image be removed?
+
+As images being inline elements are treated same as texts, so there is a gap left, which can be   removed by:
+
+CSS
+
+CSS
+img { display: block ; }
+1
+img { display: block ; }
+
+
+
+
+
+
+
+
+What are Sass, Less, and Stylus? Why do people use them? How does something like Compass relate to Sass?
+They are CSS preprocessors. They are an abstraction layer on top of CSS. They are a special syntax/language that compile down into CSS. They make managing CSS easier, with things like variables and mixins to handle vendor prefixes (among other things). They make doing best practices easier, like concatenating and compressing CSS.
+
+Bonus points for knowing how they differ and/or having experience using them. More bonus points for knowing what things like Compass, Bourbon, LESSHat, Nib, etc are and how they relate.
+
+
+
+What are CSS counters?
+Answer: CSS counters are variables that can be incremented by rules of CSS that inspector track how many times the variable has been used.
