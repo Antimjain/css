@@ -1,0 +1,76 @@
+Center Align Elements
+margin: auto;
+
+Center Align Text
+text-align: center;
+
+Center an Image
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+
+Left and Right Align - Using position
+.right {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+
+Left and Right Align - Using float
+.right {
+  float: right;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+
+Center Vertically - Using padding
+.center {
+  padding: 70px 0;
+  border: 3px solid green;
+}
+
+To center both vertically and horizontally, use padding and text-align: center:
+.center {
+  padding: 70px 0;
+  border: 3px solid green;
+  text-align: center;
+}
+
+Center Vertically - Using line-height
+Another trick is to use the line-height property with a value that is equal to the height property:
+
+
+Center Vertically - Using position & transform
+.center {
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.center p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+Center Vertically - Using Flexbox
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green;
+}

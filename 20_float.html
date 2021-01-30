@@ -1,0 +1,77 @@
+The CSS float property specifies how an element should float.
+
+left - The element floats to the left of its container
+right - The element floats to the right of its container
+none - The element does not float (will be displayed just where it occurs in the text). This is default
+inherit - The element inherits the float value of its parent
+
+
+The clear property specifies what elements can float beside the cleared element and on which side.
+
+The clear property can have one of the following values:
+
+none - Allows floating elements on both sides. This is default
+left - No floating elements allowed on the left side
+right- No floating elements allowed on the right side
+both - No floating elements allowed on either the left or the right side
+inherit - The element inherits the clear value of its parent
+
+.div3 {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border: 3px solid #73AD21;
+}
+
+.div4 {
+  border: 1px solid red;
+  clear: left;
+}
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Grid of Boxes</h2>
+<p>Float boxes side by side:</p>
+
+<div class="clearfix">
+  <div class="box" style="background-color:#bbb">
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box" style="background-color:#ccc">
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box" style="background-color:#ddd">
+  <p>Some text inside the box.</p>
+  </div>
+</div>
+
+<p>Note that we also use the clearfix hack to take care of the layout flow, and that add the box-sizing property to make sure that the box doesn't break due to extra padding. Try to remove this code to see the effect.</p>
+
+</body>
+</html>
