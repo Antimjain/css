@@ -1,3 +1,5 @@
 https://css-tricks.com/interview-questions-css/
 
 https://www.edureka.co/blog/interview-questions/css-interview-questions/
+
+https://github.com/khan4019/front-end-Interview-Questions#css-basics-and-tricky-questions

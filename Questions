@@ -204,3 +204,9 @@ How can you load css resources conditionally?
 
 If something doesn't work in a specific browser (IE8), you would u approach this problem?
 How do you test cross-browser compatibility of your site?
+
+
+position	static	The default mode, block element is positioned in the flow. Top, left etc. are ignored.
+position	relative	The block element is positioned relative to its position in the flow.
+position	absolute	Block element is positioned relative to its container.
+position	fixed	Block element is positioned relative to the window and won’t scroll.
